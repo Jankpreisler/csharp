@@ -13,7 +13,7 @@ Console.WriteLine(5 <= 5);
 Console.WriteLine(98 <= 5);*/
 
 
-//zadanie mena
+/*//zadanie mena
 var menouzivatela = "Janko";
 var heslouzivatela = 123;
 
@@ -25,7 +25,7 @@ var zadaniehesla = 123;
 Console.WriteLine("Meno správne " + porovnavaniemena);
 Console.WriteLine("Pustime pouzivatela " + prijPouzivatela);*/
 
-if (menouzivatela == zadaniemena && heslouzivatela == zadaniehesla)
+/*if (menouzivatela == zadaniemena && heslouzivatela == zadaniehesla)
 {
     Console.WriteLine("Všetko sa zhoduje Vitaj " + menouzivatela);
 
@@ -35,24 +35,7 @@ if (menouzivatela == zadaniemena && heslouzivatela == zadaniehesla)
 else
 {
     Console.WriteLine("Nesprávne meno alebo heslo ");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}*/
 
 
 
