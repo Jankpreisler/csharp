@@ -51,48 +51,40 @@ namespace MyApp
                     riadok += "*";
                 }
                 Console.WriteLine(riadok);*/
-       
+           
 
+            Console.WriteLine("Zadajte Meno");          
+
+            List<string> menaList = new List<string>();
+
+            Console.WriteLine("Mena v zozname:");
+            Console.WriteLine("");
+            Console.WriteLine("Zadaj meno:");
             
-                
-            Console.WriteLine("Zadajte Meno");
-                   
 
-            List<string> listnames = new List<string>();
-            listnames.Add(Console.ReadLine());
-            listnames.Add(Console.ReadLine());
-            listnames.Add(Console.ReadLine());
-            listnames.Add(Console.ReadLine());
-            listnames.Add(Console.ReadLine());
-            listnames.Add(Console.ReadLine());
-
-            foreach (string name in listnames)
+            while (true)
             {
-                Console.WriteLine(name);
+                var meno = Console.ReadLine() ?? "0";
+
+                if (meno == "exit")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Mena v zozname:");
+                    menaList.Add(meno);
+
+
+                    foreach (var mena in menaList)
+                    {
+                        Console.WriteLine(mena);
+                    }
+                    Console.WriteLine("");
+                    Console.WriteLine("Zadaj meno:");
+                }
             }
-
-
-
-            int i = 0;
-            while (i < 5)
-            {
-                Console.WriteLine(i);
-                i++;
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
     }
