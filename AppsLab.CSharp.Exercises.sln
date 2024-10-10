@@ -95,15 +95,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppsLab-034-Debug", "src\Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie_Podmienky", "Cvicenie_Podmienky\Cvicenie_Podmienky.csproj", "{2F0BF6D5-83A1-4B17-9493-1B2967C076FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie - list", "Cvicenie - list\Cvicenie - list.csproj", "{15D9BF4B-51DB-4CA1-8942-DE511D5FF632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie_list", "Cvicenie - list\Cvicenie_list.csproj", "{15D9BF4B-51DB-4CA1-8942-DE511D5FF632}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cvicenei cikly", "cvicenei cikly\cvicenei cikly.csproj", "{7F0CB518-3E65-4550-A84E-0542051C6650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie_Cikly", "cvicenei cikly\Cvicenie_Cikly.csproj", "{7F0CB518-3E65-4550-A84E-0542051C6650}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenia", "Cvicenia\Cvicenia.csproj", "{7BA5CCAA-2336-4909-9BDF-451919493408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenie", "Cvicenie\Cvicenie.csproj", "{4705264D-8AEA-4778-8604-5A825C881C8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie", "Cvicenie\Cvicenie.csproj", "{4705264D-8AEA-4778-8604-5A825C881C8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ulohy", "ulohy\ulohy.csproj", "{712F1C82-2487-4F2B-B3B7-36D133EC11AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ulohy", "ulohy\Ulohy.csproj", "{712F1C82-2487-4F2B-B3B7-36D133EC11AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opakovanie", "CvicenieDva\Opakovanie.csproj", "{4708128C-125E-4162-BCA4-5EEC650A34BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -703,6 +705,18 @@ Global
 		{712F1C82-2487-4F2B-B3B7-36D133EC11AD}.Release|x64.Build.0 = Release|Any CPU
 		{712F1C82-2487-4F2B-B3B7-36D133EC11AD}.Release|x86.ActiveCfg = Release|Any CPU
 		{712F1C82-2487-4F2B-B3B7-36D133EC11AD}.Release|x86.Build.0 = Release|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Debug|x64.Build.0 = Debug|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Debug|x86.Build.0 = Debug|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Release|x64.ActiveCfg = Release|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Release|x64.Build.0 = Release|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Release|x86.ActiveCfg = Release|Any CPU
+		{4708128C-125E-4162-BCA4-5EEC650A34BA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

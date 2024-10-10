@@ -24,4 +24,4 @@ namespace MyApp
 
 
 
-   //metoda ktora spocita samohlasky
+  

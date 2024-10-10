@@ -37,6 +37,7 @@ internal class Program
         int vygeneradovane = rnd.Next(maxValue: 100);
         int pokus = 0;
         int tip = 0;
+        int maximum = 10;
 
         
 
@@ -55,14 +56,17 @@ internal class Program
             else if ( tip < vygeneradovane)
             {
                 Console.WriteLine("Cislo je male");
-            }
+            }           
             else if (tip == vygeneradovane) 
             {
                 Console.WriteLine("Gratulujem uhadol si cislo." + " Mal si " + pokus +" pokusov.");
                 break;
             }
-            
-           
+            if (pokus == maximum)
+            {
+                Console.WriteLine("Vyprsal ti maximalny pocet pokusov");
+                break;
+            }
         }
 
     }
