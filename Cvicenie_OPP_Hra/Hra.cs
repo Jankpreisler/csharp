@@ -37,8 +37,6 @@ namespace Cvicenie_OPP_Hra
 
             int damagemultiplayer = 1;
 
-
-
             Random random = new Random();
             int randomnuber = random.Next(0,100);
             if (randomnuber <= this.Critchanges) 

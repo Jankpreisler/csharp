@@ -52,7 +52,7 @@ namespace Cvicenie_OPP_Hra
                     }
                 }
 
-
+                
                 Random rnd = new Random();
                 int randomnuberjedna  = rnd.Next(0, 100);
                 
