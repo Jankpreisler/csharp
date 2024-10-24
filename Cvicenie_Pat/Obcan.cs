@@ -22,10 +22,10 @@ namespace Cvicenie_Pat
             Meno = meno;
             Vek = vek;
         }
-        public string Vypisobcanov() 
+        public void Vypisobcanov() 
         {
-            return Meno + Vek;
-        
+            Console.WriteLine("Meno - " + Meno + " || "+ " Vek - " + Vek);
+
         }
     }
 }

@@ -12,24 +12,26 @@ namespace Cvicenie_Pat
 
         public List<Obcan> Obcania { get; set; }
 
-        public Mesto()
-        {
+       
 
-        }
-
-        public Mesto(string mesta, List<Obcan> obcania)
+        public Mesto(string mesta)
         {
             Mesta = mesta;
-            Obcania = obcania;
+            Obcania = new List<Obcan>();
         }
-        public string PridajObcana(Obcan obcan) 
+        public void PridajObcana(Obcan obcan) 
         {
-            return Mesta + Obcania;
-
+           
+            Obcania.Add(obcan); 
         }
-        public string VypisObcanov() 
+        public void VypisObcanov() 
         {
-            return 
+            Console.WriteLine("Obcania mesta " + Mesta);
+            foreach (var obcan in Obcania)
+            {
+                obcan.Vypisobcanov();
+            }
+            Console.WriteLine();
 
 
         }

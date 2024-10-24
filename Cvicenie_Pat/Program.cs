@@ -6,19 +6,26 @@ namespace Cvicenie_Pat
     {
         static void Main(string[] args)
         {
-            List<string> obcania = new List<string>(); 
-            while (true) 
-            {
-                Console.WriteLine("Zadajte meno obcana");
+            Mesto bratislava = new Mesto("Bratislava") ;
+            Mesto kosice = new Mesto("Kosice");            
 
-                obcania.Add("Igor");
-                obcania.Add("Tibor");
-                obcania.Add("Michal");
-            }
-            
+            Obcan obcan = new Obcan() {Meno = "Peter",Vek = 45 };
+            Obcan obcan1 = new Obcan() {Meno = "Igor",Vek = 35 };
+
+            Obcan obcan2 = new Obcan() { Meno = "Jan", Vek = 16 };
+            Obcan obcan3 = new Obcan() { Meno = "Martina", Vek = 45 };
 
 
 
+
+            bratislava.PridajObcana(obcan);
+            bratislava.PridajObcana(obcan1);
+
+            kosice.PridajObcana(obcan2);
+            kosice.PridajObcana(obcan3);
+
+            bratislava.VypisObcanov();
+            kosice.VypisObcanov();
         }
     }
 }
