@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cvicenie_Pat
 {
-    internal class Obcan
+    public class Obcan
     {
         public string Meno { get; set; }
 
@@ -18,15 +18,21 @@ namespace Cvicenie_Pat
 
         }
 
-        public Obcan(string meno, int vek, string zamestnanie)
+        public Obcan(string meno, int vek)
         {
             Meno = meno;
             Vek = vek;
            
         }
-        public void Vypisobcanov() 
+        public void VypisInfo() 
         {
-            Console.WriteLine("Meno: " + Meno + " || "+ " Vek:  " + Vek);
+            Console.WriteLine("Meno: " + Meno);
+
+        }
+       
+        public void VypisVek() 
+        { 
+         Console.WriteLine("Vek: " + Vek);   
 
         }
     }

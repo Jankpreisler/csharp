@@ -6,23 +6,10 @@ using System.Threading.Tasks;
 
 namespace Cvicenie_Pat
 {
-    internal class Lekar
+    class Lekar : Obcan
     {
-        public string Meno { get; set; }
-        public int Vek { get; set; }
-
-        public Lekar()
-        {
-        }
-
-        public Lekar(string meno, int vek)
-        {
-          Meno = meno;
-           Vek = vek;
-            
-        }
-
-        public void Liecenie()
+        public Lekar(string meno, int vek) : base(meno, vek) { }
+        public new void VypisInfo()
         {
             Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Lieci");
         }

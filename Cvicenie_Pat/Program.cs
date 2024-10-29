@@ -8,33 +8,51 @@ namespace Cvicenie_Pat
         {  
             // definovanie mesta
             Mesto bratislava = new Mesto("Bratislava") ;
-            Mesto kosice = new Mesto("Kosice");            
+            /* Mesto kosice = new Mesto("Kosice");            
 
-            // Definovanie obcanov
-            Obcan  obcan = new Obcan() {Meno = "Peter",Vek = 45};
-            Obcan obcan1 = new Obcan() { Meno = "Igor", Vek = 35 };
+             // Definovanie obcanov
+             Obcan  obcan = new Obcan("Peter",45) {Meno = "Peter",Vek = 45};
+             Obcan obcan1 = new Obcan("Igor",35) { Meno = "Igor", Vek = 35 };
 
-            Obcan obcan2 = new Obcan() { Meno = "Jan", Vek = 16 };
-            Obcan obcan3 = new Obcan() { Meno = "Martina", Vek = 45 };
+             Obcan obcan2 = new Obcan("Jan",16) { Meno = "Jan", Vek = 16 };
+             Obcan obcan3 = new Obcan("Martina", 45) { Meno = "Martina", Vek = 45 };
 
-            Lekar lekar = new Lekar() { Meno = "FIlo", Vek = 25};
-            Predavac predavac = new Predavac() {Meno = "Dalibor", Vek = 25 };
-            Lekar lekar1 = new Lekar() {Meno = "Vanasa", Vek = 16 };
-            Programator programator = new Programator() {Meno = "Rado", Vek = 36 };
-                       
-            //zaludnenie miest
-            bratislava.Pridajlekaradomesta(lekar1);
-            bratislava.Pridajlekaradomesta(lekar);
-            bratislava.PridajObcanadomesta(obcan);
+             Lekar lekar = new Lekar("Filo", 36);
+             Predavac predavac = new Predavac() {Meno = "Dalibor", Vek = 25 };
+
+             Lekar lekar1 = new Lekar("Vanasa", 16) ;
+             Programator programator = new Programator("Rado",36, "Csharp") {Meno = "Rado", Vek = 36 };
+
+             //zaludnenie miest
+             bratislava.PridajObcanadomesta(lekar1);
+             bratislava.PridajObcanadomesta(lekar);
+             bratislava.PridajObcanadomesta(obcan);
 
 
-            kosice.PridajPredavaca(predavac);
-            kosice.PridajProgramatora(programator);
-            kosice.PridajObcanadomesta(obcan3);
+             kosice.PridajPredavaca(predavac);
+             kosice.PridajObcanadomesta(programator);
+             kosice.PridajObcanadomesta(obcan3);
 
-            // oznamenie
+             // oznamenie
+             bratislava.VypisObcanov();
+             kosice.VypisObcanov();*/
+
+            Lekar lekar = new Lekar("Filo", 36);
+            Programator programator = new Programator("Rado", 36, "Csharp");
+            Seniorprogramator programator1 = new Seniorprogramator("Rado", 36, "Csharp",75 );
+
+
+            bratislava.PridajObcanadomesta(programator);
+            bratislava.PridajObcanadomesta(lekar);
+            bratislava.PridajObcanadomesta(programator1);
+
             bratislava.VypisObcanov();
-            kosice.VypisObcanov();
+
+
+
+
+
+
         }
     }
 }

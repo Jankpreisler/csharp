@@ -6,24 +6,17 @@ using System.Threading.Tasks;
 
 namespace Cvicenie_Pat
 {
-    internal class Programator
+    internal class Programator : Obcan
     {
-        public string Meno { get; set; }
-        public int Vek { get; set; }
-
-        public Programator()
-        {
+        public string Programovacijazyk { get; set; }
+        public Programator(string meno, int vek, string programovacijazyk) : base(meno, vek) 
+        { 
+        
+         this.Programovacijazyk = programovacijazyk;
         }
-
-        public Programator(string meno, int vek)
+        public new void VypisInfo()
         {
-            this.Meno = meno;
-            this.Vek = vek;
-
-        }
-        public void Programovanie()
-        {
-            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje");
+            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk);
         }
     }
 }
