@@ -5,10 +5,12 @@ namespace Cvicenie_Pat
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {  
+            // definovanie mesta
             Mesto bratislava = new Mesto("Bratislava") ;
             Mesto kosice = new Mesto("Kosice");            
 
+            // Definovanie obcanov
             Obcan  obcan = new Obcan() {Meno = "Peter",Vek = 45};
             Obcan obcan1 = new Obcan() { Meno = "Igor", Vek = 35 };
 
@@ -20,7 +22,7 @@ namespace Cvicenie_Pat
             Lekar lekar1 = new Lekar() {Meno = "Vanasa", Vek = 16 };
             Programator programator = new Programator() {Meno = "Rado", Vek = 36 };
                        
-
+            //zaludnenie miest
             bratislava.Pridajlekaradomesta(lekar1);
             bratislava.Pridajlekaradomesta(lekar);
             bratislava.PridajObcanadomesta(obcan);
@@ -30,6 +32,7 @@ namespace Cvicenie_Pat
             kosice.PridajProgramatora(programator);
             kosice.PridajObcanadomesta(obcan3);
 
+            // oznamenie
             bratislava.VypisObcanov();
             kosice.VypisObcanov();
         }
