@@ -14,7 +14,7 @@ namespace Cvicenie_Pat
         
          this.Programovacijazyk = programovacijazyk;
         }
-        public new void VypisInfo()
+        public override void VypisInfo()
         {
             Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk);
         }

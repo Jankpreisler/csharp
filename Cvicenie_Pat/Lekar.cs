@@ -9,7 +9,9 @@ namespace Cvicenie_Pat
     class Lekar : Obcan
     {
         public Lekar(string meno, int vek) : base(meno, vek) { }
-        public new void VypisInfo()
+
+
+        public override void VypisInfo()
         {
             Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Lieci");
         }

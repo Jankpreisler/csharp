@@ -39,12 +39,33 @@ namespace Cvicenie_Pat
 
             Lekar lekar = new Lekar("Filo", 36);
             Programator programator = new Programator("Rado", 36, "Csharp");
-            Seniorprogramator programator1 = new Seniorprogramator("Rado", 36, "Csharp",75 );
+            Seniorprogramator programator1 = new Seniorprogramator("Rado", 36, "Csharp",75);
 
+            
+            /*while (bratislava.Obcania.Count < 31)
+            {
+                Obcan ob = Generatorobcanov.GenerujObcana();
+                bratislava.PridajObcanadomesta(ob);
+                
+            }*/
+            /*for (int i = 0; i < 31; i++)
+            {
+                Obcan ob = Generatorobcanov.GenerujObcana();
+                bratislava.PridajObcanadomesta(ob);
+
+            }*/
+            while (bratislava.Obcania.Count < 31)
+            {
+                Obcan ob = Generatorobcanov.Generuprogramatora();
+                bratislava.PridajObcanadomesta(ob);
+
+            }
 
             bratislava.PridajObcanadomesta(programator);
             bratislava.PridajObcanadomesta(lekar);
             bratislava.PridajObcanadomesta(programator1);
+
+            
 
             bratislava.VypisObcanov();
 

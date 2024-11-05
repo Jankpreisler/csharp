@@ -13,9 +13,9 @@ namespace Cvicenie_Pat
         { 
           this.PocetProjektov = pocetprojektov;
         }
-        public void VypisInfo() 
+        public override void VypisInfo() 
         {
-            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk + "ma za sebou" + PocetProjektov);
+            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk + "ma za sebou " + PocetProjektov);
         }
     }
 }

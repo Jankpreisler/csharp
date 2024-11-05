@@ -24,15 +24,9 @@ namespace Cvicenie_Pat
             Vek = vek;
            
         }
-        public void VypisInfo() 
+        public virtual void VypisInfo() 
         {
-            Console.WriteLine("Meno: " + Meno);
-
-        }
-       
-        public void VypisVek() 
-        { 
-         Console.WriteLine("Vek: " + Vek);   
+            Console.WriteLine("Meno: " + Meno + " || Vek: " + Vek);
 
         }
     }
