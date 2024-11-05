@@ -35,9 +35,7 @@ namespace Cvicenie_Pat
             {
                 obcan.VypisInfo();
                
-            }                                                       
-            
-            
+            }                                                                 
         }
 
     }

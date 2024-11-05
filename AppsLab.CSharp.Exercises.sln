@@ -111,9 +111,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie_OOP", "Cvicenie_OO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie_OPP_Hra", "Cvicenie_OPP_Hra\Cvicenie_OPP_Hra.csproj", "{9F00B98A-D1BE-481D-A26B-9C75B0534D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenia_styry", "Cvicenia_styry\Cvicenia_styry.csproj", "{B9DF779E-4F75-4606-93E4-497E699FE746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenia_styry", "Cvicenia_styry\Cvicenia_styry.csproj", "{B9DF779E-4F75-4606-93E4-497E699FE746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenie_Pat", "Cvicenie_Pat\Cvicenie_Pat.csproj", "{1C2B8C21-B044-49A1-AF8B-6EE0FD8675EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie_Pat", "Cvicenie_Pat\Cvicenie_Pat.csproj", "{1C2B8C21-B044-49A1-AF8B-6EE0FD8675EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autopožičovňa", "Autopožičovňa\Autopožičovňa.csproj", "{728051DB-D724-4E38-BC4B-DA61F759BB3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -773,6 +775,18 @@ Global
 		{1C2B8C21-B044-49A1-AF8B-6EE0FD8675EB}.Release|x64.Build.0 = Release|Any CPU
 		{1C2B8C21-B044-49A1-AF8B-6EE0FD8675EB}.Release|x86.ActiveCfg = Release|Any CPU
 		{1C2B8C21-B044-49A1-AF8B-6EE0FD8675EB}.Release|x86.Build.0 = Release|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Debug|x64.Build.0 = Debug|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Debug|x86.Build.0 = Debug|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Release|x64.ActiveCfg = Release|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Release|x64.Build.0 = Release|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Release|x86.ActiveCfg = Release|Any CPU
+		{728051DB-D724-4E38-BC4B-DA61F759BB3D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
