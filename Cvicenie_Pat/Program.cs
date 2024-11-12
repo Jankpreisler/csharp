@@ -40,7 +40,6 @@ namespace Cvicenie_Pat
             Lekar lekar = new Lekar("Filo", 36);
             Programator programator = new Programator("Rado", 36, "Csharp");
             Seniorprogramator programator1 = new Seniorprogramator("Rado", 36, "Csharp",75);
-
             
             /*while (bratislava.Obcania.Count < 31)
             {
@@ -60,20 +59,11 @@ namespace Cvicenie_Pat
                 bratislava.PridajObcanadomesta(ob);
 
             }
-
             bratislava.PridajObcanadomesta(programator);
             bratislava.PridajObcanadomesta(lekar);
             bratislava.PridajObcanadomesta(programator1);
 
-            
-
             bratislava.VypisObcanov();
-
-
-
-
-
-
         }
     }
 }
