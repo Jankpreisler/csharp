@@ -13,7 +13,7 @@ namespace Cvicenie_Pat
                                          "Andrej", "Lenka", "Patrik", "Monika", "Filip", "Veronika",
                                          "Richard", "Simona", "Róbert", "Mária", "Jakub", "Barbora", "Adam", "Dominika", "Lukáš", "Daniela", "Vladimír", "Nikola"};
 
-        private static string[] programovacie = { "C#", "C", "C++", "Python", "Delphi", "Java" };
+        private static string[] programovacie = { "C#", "C", "C++", "Python", "Delphi", "Java", "Java script" };
         public static Obcan GenerujObcana() 
         { 
           Random rnd = new Random();
@@ -43,12 +43,6 @@ namespace Cvicenie_Pat
             Programator pro = new Programator(mejno, veky, jazyky) { };
 
             return pro; 
-
-
         }
-
-
-
-
     }
 }

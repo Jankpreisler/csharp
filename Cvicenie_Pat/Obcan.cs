@@ -8,16 +8,21 @@ namespace Cvicenie_Pat
 {
     public class Obcan
     {
-        public string Meno { get; set; }
+        protected string meno;
+        protected int vek;
 
-        public int Vek { get; set; }
-        
 
-        public Obcan()
+        public string Meno 
         {
+            get { return meno; } 
+            set { meno = value; }
+        } 
 
+        public int Vek 
+        {
+            get { return vek; } set { vek = value; }          
         }
-
+        
         public Obcan(string meno, int vek)
         {
             Meno = meno;

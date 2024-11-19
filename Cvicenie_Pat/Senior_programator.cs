@@ -8,6 +8,7 @@ namespace Cvicenie_Pat
 {
     internal class Seniorprogramator : Programator
     {
+        private int pocetProjektov;
         public int PocetProjektov { get; set; }
         public Seniorprogramator(string meno, int vek, string programovacijazyk, int pocetprojektov) : base(meno, vek, programovacijazyk) 
         { 
@@ -15,7 +16,7 @@ namespace Cvicenie_Pat
         }
         public override void VypisInfo() 
         {
-            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk + "ma za sebou " + PocetProjektov);
+            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk + " ma za sebou " + PocetProjektov);
         }
     }
 }

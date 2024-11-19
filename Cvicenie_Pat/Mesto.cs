@@ -8,12 +8,20 @@ namespace Cvicenie_Pat
 {
     internal class Mesto
     {
-        public string Mesta { get; set; }
+        private string mesta;
+        private List<Obcan> obcanie;
 
-        public List<Obcan> Obcania { get; set; }
-        
-        
+        public string Mesta 
+        { 
+          get { return mesta; } set { mesta = value; }      
+        } 
 
+        public List<Obcan> Obcania 
+        {
+            get { return obcanie; } set { obcanie = value; }
+        
+        } 
+        
 
         public Mesto(string mesta)
         {

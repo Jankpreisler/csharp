@@ -8,6 +8,7 @@ namespace Cvicenie_Pat
 {
     internal class Programator : Obcan
     {
+        protected string programovacijazyk;
         public string Programovacijazyk { get; set; }
         public Programator(string meno, int vek, string programovacijazyk) : base(meno, vek) 
         { 
