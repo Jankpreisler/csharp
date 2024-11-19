@@ -13,12 +13,14 @@ namespace Cvicenie_Pat
 
         public string Mesta 
         { 
-          get { return mesta; } set { mesta = value; }      
+          get { return mesta; } 
+          set { mesta = value; }      
         } 
 
         public List<Obcan> Obcania 
         {
-            get { return obcanie; } set { obcanie = value; }
+            get { return obcanie; } 
+            set { obcanie = value; }
         
         } 
         
