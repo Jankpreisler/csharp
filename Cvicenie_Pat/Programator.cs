@@ -17,7 +17,7 @@ namespace Cvicenie_Pat
         }
         public override void VypisInfo()
         {
-            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk);
+            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk + " || Stav obcana " + stav);
         }
     }
 }

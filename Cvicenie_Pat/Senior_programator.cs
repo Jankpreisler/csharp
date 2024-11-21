@@ -9,14 +9,14 @@ namespace Cvicenie_Pat
     internal class Seniorprogramator : Programator
     {
         private int pocetProjektov;
-        public int PocetProjektov { get; set; }
+        public int PocetProjektov { get { return pocetProjektov; } set { pocetProjektov = value; } }
         public Seniorprogramator(string meno, int vek, string programovacijazyk, int pocetprojektov) : base(meno, vek, programovacijazyk) 
         { 
           this.PocetProjektov = pocetprojektov;
         }
         public override void VypisInfo() 
         {
-            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk + " ma za sebou " + PocetProjektov);
+            Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk + " ma za sebou " + PocetProjektov + " || Stav obcana " + stav);
         }
     }
 }

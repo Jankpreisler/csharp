@@ -14,6 +14,8 @@ namespace Cvicenie_Pat
                                          "Richard", "Simona", "Róbert", "Mária", "Jakub", "Barbora", "Adam", "Dominika", "Lukáš", "Daniela", "Vladimír", "Nikola"};
 
         private static string[] programovacie = { "C#", "C", "C++", "Python", "Delphi", "Java", "Java script" };
+
+        
         public static Obcan GenerujObcana() 
         { 
           Random rnd = new Random();
@@ -41,6 +43,9 @@ namespace Cvicenie_Pat
             int veky = Convert.ToInt32(vejk); 
 
             Programator pro = new Programator(mejno, veky, jazyky) { };
+            int dlzka = (Enum.GetValues<StavObcana>().Length);
+            int nahodnyIndex = rejndom.Next(0, dlzka);
+            pro.Stav = (StavObcana)nahodnyIndex;
 
             return pro; 
         }

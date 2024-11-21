@@ -10,7 +10,13 @@ namespace Cvicenie_Pat
     {
         protected string meno;
         protected int vek;
+        protected StavObcana stav;
 
+        public StavObcana Stav
+        {
+            get { return stav; }
+            set { stav = value; }
+        }
 
         public string Meno 
         {
@@ -18,11 +24,13 @@ namespace Cvicenie_Pat
             set { meno = value; }
         } 
 
+
         public int Vek 
         {
             get { return vek; } set { vek = value; }          
         }
-        
+       
+
         public Obcan(string meno, int vek)
         {
             Meno = meno;
@@ -31,8 +39,22 @@ namespace Cvicenie_Pat
         }
         public virtual void VypisInfo() 
         {
-            Console.WriteLine("Meno: " + Meno + " || Vek: " + Vek);
+            var st = new StavObcana();
+            Console.WriteLine("Meno: " + Meno + " || Vek: " + Vek + " || Stav obcana " + stav);
 
         }
     }
 }
+
+public enum StavObcana
+{ 
+    Domaci,
+    Cudzinci,
+    Un_turista,
+
+
+}
+
+
+
+

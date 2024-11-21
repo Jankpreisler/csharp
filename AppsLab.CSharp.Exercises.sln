@@ -121,9 +121,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ", "LINQ\LINQ.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kniznica", "Kniznica\Kniznica.csproj", "{9747EB00-C070-49E5-86FE-0F3E0BCB19D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPP_Kniha", "OPP_Kniha\OPP_Kniha.csproj", "{E763801F-FD0D-4C9D-B31D-19EF5B40FB3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OPP_Kniha", "OPP_Kniha\OPP_Kniha.csproj", "{E763801F-FD0D-4C9D-B31D-19EF5B40FB3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenie_OPP_TIMI", "Cvicenie_OPP_TIMI\Cvicenie_OPP_TIMI.csproj", "{70879501-7AC9-4B73-8A67-36F5F08596EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie_OPP_TIMI", "Cvicenie_OPP_TIMI\Cvicenie_OPP_TIMI.csproj", "{70879501-7AC9-4B73-8A67-36F5F08596EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoBazar", "AutoBazar\AutoBazar.csproj", "{84506876-C30B-4788-8ABE-B68950BE825F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -843,6 +845,18 @@ Global
 		{70879501-7AC9-4B73-8A67-36F5F08596EA}.Release|x64.Build.0 = Release|Any CPU
 		{70879501-7AC9-4B73-8A67-36F5F08596EA}.Release|x86.ActiveCfg = Release|Any CPU
 		{70879501-7AC9-4B73-8A67-36F5F08596EA}.Release|x86.Build.0 = Release|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Debug|x64.Build.0 = Debug|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Debug|x86.Build.0 = Debug|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Release|x64.ActiveCfg = Release|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Release|x64.Build.0 = Release|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Release|x86.ActiveCfg = Release|Any CPU
+		{84506876-C30B-4788-8ABE-B68950BE825F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
