@@ -43,9 +43,12 @@ namespace Cvicenie_Pat
             int veky = Convert.ToInt32(vejk); 
 
             Programator pro = new Programator(mejno, veky, jazyky) { };
+
             int dlzka = (Enum.GetValues<StavObcana>().Length);
             int nahodnyIndex = rejndom.Next(0, dlzka);
             pro.Stav = (StavObcana)nahodnyIndex;
+
+            //pro.Stav = StavObcana.Cudzinci;
 
             return pro; 
         }
