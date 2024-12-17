@@ -4,44 +4,54 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Autopožičovňa
+namespace AutoBazar
 {
-    internal class Pozicovna
+    internal class Garaze
     {
         public List<Auto> ZoznamAut { get; set; }
+        public List<string> ZoznamAuta { get; set; }
 
-        public Pozicovna()
+        public  Garaze()
         {
             ZoznamAut = new List<Auto>();
+            ZoznamAuta = new List<string>();
         }
 
-        public Pozicovna(List<Auto> zoznamAut)
+        public Garaze(List<Auto> zoznamAut)
         {
             ZoznamAut = zoznamAut;
         }
-        public void PridajAuto(Auto auto)
+        public void PridajAuto(Auto auto )
         {
             ZoznamAut.Add(auto);
+            
+        }
+        public void OdstranjAuto(Auto auto)
+        {
+            ZoznamAut.Remove(auto);
+
         }
         public void VypisVsetkyAuta()
         {
-            foreach (var vozidlo in ZoznamAut)
+            for (int i = 0; i < ZoznamAut.Count; i++)
             {
-                vozidlo.VypisInfo();
+                Console.WriteLine($"Auto {i}:");
+                ZoznamAut[i].VypisInfo();
+                Console.WriteLine();
             }
+           
         }
-        public void VypocitajCenuPrenajmu(int indexAuta, int dni)
+        public void VypocitajCenuPredaju(int indexAuta)
         {
-            if (indexAuta < 0 || indexAuta >= 3)
+
+            if (indexAuta < 0 || indexAuta >= 13)
             {
                 Console.WriteLine("Bud ho niekto ukradol alebo jednoducho neexistuje.");
                 return;
             }
-
             Auto vybraneAuto = ZoznamAut[indexAuta];
-            double cenaPredaju = vybraneAuto.VypocitajCenu(dni);
+            double cenaPredaju = vybraneAuto.Cena;
             Console.WriteLine($"Auto znacky {vybraneAuto.Znacka} {vybraneAuto.Model} je predane za {cenaPredaju} eur.");
         }
     }
 }
-

@@ -5,9 +5,26 @@ namespace Cvicenie_Pat
     internal class Program
     {
         static void Main(string[] args)
-        {  
+        {
+            Mesto bratislava = Mesto.Nacitajzosuboru("mesto.json");
+            if (bratislava == null) 
+            {
+               
+                bratislava = new Mesto("Bratislava");
+                for (int i = 0; i < 32; i++)
+                {
+                    Obcan ob = Generatorobcanov.Generuprogramatora();
+                    bratislava.PridajObcanadomesta(ob);
+
+                }
+                string subor = "mesto.json";
+                bratislava.UlozdoSuboru(subor);
+                
+            }
+            bratislava.VypisObcanov();
+
             // definovanie mesta
-            Mesto bratislava = new Mesto("Bratislava") ;
+
             /* Mesto kosice = new Mesto("Kosice");            
 
              // Definovanie obcanov
@@ -35,7 +52,7 @@ namespace Cvicenie_Pat
 
              // oznamenie
              bratislava.VypisObcanov();
-             kosice.VypisObcanov();*/
+             kosice.VypisObcanov();
 
             Lekar lekar = new Lekar("Filo", 36);
             Programator programator = new Programator("Rado", 36, "Csharp");
@@ -53,17 +70,21 @@ namespace Cvicenie_Pat
                 bratislava.PridajObcanadomesta(ob);
 
             }*/
-            while (bratislava.Obcania.Count < 31)
+            /*while (bratislava.Obcania.Count < 31)
             {
                 Obcan ob = Generatorobcanov.Generuprogramatora();
                 bratislava.PridajObcanadomesta(ob);
 
             }
-            bratislava.PridajObcanadomesta(programator);
-            bratislava.PridajObcanadomesta(lekar);
-            bratislava.PridajObcanadomesta(programator1);
+            string subor = "mesto.json";
+            bratislava.UlozdoSuboru(subor);
+           
 
-            bratislava.VypisObcanov();
+            /* bratislava.PridajObcanadomesta(programator);
+             bratislava.PridajObcanadomesta(lekar);
+             bratislava.PridajObcanadomesta(programator1);*
+
+            bratislava.VypisObcanov();*/
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Cvicenie_Pat
@@ -31,7 +32,11 @@ namespace Cvicenie_Pat
             Obcania = new List<Obcan>();          
               
       
-        }        
+        }      
+        public Mesto() 
+        { 
+        
+        }
         public void PridajObcanadomesta(Obcan obcan) 
         {
             Obcania.Add(obcan);
@@ -47,6 +52,22 @@ namespace Cvicenie_Pat
                
             }                                                                 
         }
+        public void UlozdoSuboru(string nazovsuboru) 
+        {
+            string json = JsonSerializer.Serialize(this);
+            File.WriteAllText(nazovsuboru, json);
+            Console.WriteLine("Data boli ulozene");    
+        }
+        public static Mesto Nacitajzosuboru(string nazovSuboru) 
+        {
+            if (File.Exists(nazovSuboru))
+            {
+                string json = File.ReadAllText(nazovSuboru);
+                Mesto mesto = JsonSerializer.Deserialize<Mesto>(json);
+                return mesto;
+            }
+            return null;
 
+        }
     }
 }

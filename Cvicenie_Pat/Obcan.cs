@@ -29,7 +29,10 @@ namespace Cvicenie_Pat
         {
             get { return vek; } set { vek = value; }          
         }
-       
+
+        public Obcan()
+        {
+        }
 
         public Obcan(string meno, int vek)
         {
@@ -51,8 +54,6 @@ public enum StavObcana
     Domaci,
     Cudzinci,
     Un_turista,
-
-
 }
 
 

@@ -10,11 +10,19 @@ namespace Cvicenie_Pat
     {
         protected string programovacijazyk;
         public string Programovacijazyk { get; set; }
+
+        public Programator()
+        {
+        }
+
         public Programator(string meno, int vek, string programovacijazyk) : base(meno, vek) 
         { 
         
          this.Programovacijazyk = programovacijazyk;
         }
+
+       
+
         public override void VypisInfo()
         {
             Console.WriteLine("Meno: " + Meno + " || Vek " + Vek + " || Programuje v " + Programovacijazyk + " || Stav obcana " + stav);
