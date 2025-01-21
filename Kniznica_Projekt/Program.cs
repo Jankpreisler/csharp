@@ -24,9 +24,9 @@
 
             kniznica.Displayuser();
 
-            kniznica.AddBook(admin, new Kniha("2018", "Zaklinac", "Andrej Saptovsky", 1987, true));
+            kniznica.AddBook(admin, new Kniha("2018", "Zaklinac", "Andrej Saptovsky", 1987, false));
             kniznica.AddBook(admin, new Kniha("2019", "Bibleee", "Smusa kovy", 2019, false));
-            kniznica.AddBook(admin, new Kniha("2020", "Harry Potter", "J.K. Rowlingova", 1998, false));
+            kniznica.AddBook(admin, new Kniha("2020", "Harry Potter", "J.K. Rowlingova", 1998, true));
             kniznica.AddBook(admin, new Kniha("2021", "1945", "Orvel", 2000, true));
             kniznica.AddBook(admin, new Kniha("2022", "Amazing Spider-Man", "Stan Leee", 1987, false));
 

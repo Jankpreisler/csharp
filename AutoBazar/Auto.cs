@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace AutoBazar
 {
     internal class Auto
-    {       
+    {
+        public int ID { get; set; }
         public string Znacka { get; set; }
         public string  Model { get; set; }
         public int Cena { get; set; }
@@ -17,9 +18,9 @@ namespace AutoBazar
         public int Batozina { get; set; }
         public string Opis { get; set; }
 
-        public Auto(string znacka, string model, int cena, int spotreba, int pasaziery, int batozina, string opis)
+        public Auto(int id,string znacka, string model, int cena, int spotreba, int pasaziery, int batozina, string opis)
         {
-            
+            this.ID = id;
             Znacka = znacka;
             Model = model;
             Cena = cena;
@@ -31,7 +32,7 @@ namespace AutoBazar
 
         public virtual void VypisInfo() 
         {
-            Console.WriteLine($"{Znacka}  {Model} za {Cena}$ ma spotrebu {Spotreba} velkost batozinoveho priestoru je {Batozina} pasaziery {Pasaziery} Opis: {Opis}");
+            Console.WriteLine($"{ID} - {Znacka}  {Model} za {Cena}$ ma spotrebu {Spotreba} velkost batozinoveho priestoru je {Batozina} pasaziery {Pasaziery} Opis: {Opis}");
             Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------------------------------");
         }
     }
