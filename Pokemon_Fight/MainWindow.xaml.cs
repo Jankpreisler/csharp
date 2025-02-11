@@ -29,7 +29,7 @@ namespace Pokemon_Fight
             Window_PokemonBattle.Show();
 
             this.Hide();
-
+            this.Close();
 
         }
     }

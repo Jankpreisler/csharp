@@ -53,13 +53,18 @@ namespace Pokemon_Fight
         public int Heal() 
         {
             Random rnd = new Random();
-            int healtValue = rnd.Next(20, 72);
-            Health += healtValue;
-            if (Health > 100)
+            return rnd.Next(20, 71);
+            
+        }
+        public void TakeHeal(int heal)
+        {
+            Health += heal;
+            if (Health >= 0)
             {
                 Health = 100;
+                
             }
-            return healtValue;
+            
         }
     }
 }
