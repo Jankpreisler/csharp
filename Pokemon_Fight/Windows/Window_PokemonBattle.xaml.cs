@@ -64,11 +64,6 @@ namespace Pokemon_Fight.Windows
                 Heal.IsEnabled = false;
             }
         }
-
-
-
-
-
         private void AIAtack()
         {
             Random rnd = new Random();

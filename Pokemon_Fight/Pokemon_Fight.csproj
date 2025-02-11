@@ -24,8 +24,8 @@
     <Resource Include="images\pokemon_PNG9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Windows\deffeefw.png" />
-    <Resource Include="Windows\qwddwq.jpg" />
+    <Resource Include="images\deffeefw.png" />
+    <Resource Include="images\qwddwq.jpg" />
   </ItemGroup>
 
 </Project>

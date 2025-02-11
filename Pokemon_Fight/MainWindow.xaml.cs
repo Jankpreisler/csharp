@@ -25,11 +25,11 @@ namespace Pokemon_Fight
         {
             InitializeComponent();
 
-            Window_PokemonBattle = new Window_PokemonBattle();
-            Window_PokemonBattle.Show();
+            //Window_PokemonBattle = new Window_PokemonBattle();
+            //Window_PokemonBattle.Show();
 
-            this.Hide();
-            this.Close();
+            //this.Hide();
+            //this.Close();
 
         }
     }
