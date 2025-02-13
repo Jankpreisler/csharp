@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         Title="Window_PokemonBattle" Height="450" Width="800">
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Windows/qwddwq.jpg"/>
-        </Grid.Background>
+
+
+
         <Image Margin="615,129,19,147" Source="/images/eevee.png" Stretch="Fill"/>
         <Image Margin="22,134,620,141" Source="/images/pokemon_PNG9.png" Stretch="Fill"/>
         <ProgressBar Name="ProgressBar_Pokemon1_HP" HorizontalAlignment="Left" Height="34" Margin="22,49,0,0" VerticalAlignment="Top" Width="188" Background="Black" Foreground="#FF00FF2F"/>
-        <Label Name="label_Pokemon_1HP" Content="x/x" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="56,110,0,0" VerticalAlignment="Top" Height="26" Width="114"/>
+        <Label Name="label_Pokemon_1HP" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="56,110,0,0" VerticalAlignment="Top" Height="26" Width="114">
+            <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged"/>
+        </Label>
         <ProgressBar Name="ProgressBar_Pokemon_2HP"  HorizontalAlignment="Left" Height="34" Margin="593,49,0,0" VerticalAlignment="Top" Width="179" Foreground="#FF05FF33" Background="#FF0A0909"/>
         <Label Name="label_Pokemon_2HP" Content="x/x" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="639,105,0,0" VerticalAlignment="Top" Height="27" Width="100" RenderTransformOrigin="0.241,0.208"/>
         <Button Name="Light" Content="Light Attack" HorizontalAlignment="Left" Margin="7,312,0,0" VerticalAlignment="Top" Height="34" Width="104" Click="Button_Click" Background="#FFD7E031"/>

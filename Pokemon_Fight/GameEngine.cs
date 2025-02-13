@@ -13,8 +13,8 @@ namespace Pokemon_Fight
 
         public GameEngine()
         {
-            FirstPokemon = new Pokemon("Pikachu");
-            LastPokemon = new Pokemon("Eevee");
+            FirstPokemon = new Pokemon("Pikachu", 200, 1);
+            LastPokemon = new Pokemon("Eevee", 100, 1);
         }
     }
 }

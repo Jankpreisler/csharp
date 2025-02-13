@@ -12,32 +12,36 @@ namespace Pokemon_Fight
         public string Name { get; set; }
 
         public int Health { get; set; }
+        public int MaxHealth { get; set; }
+        public int Level { get; set; }
 
-        public Pokemon(string name)
+        public Pokemon(string name, int maxHealth, int level)
         {
             Name = name;
-            Health = 100;
+            this.Health = maxHealth;
+            MaxHealth = maxHealth;
+            Level = level;
         }
 
         public int Attack() 
         { 
           Random rnd = new Random();
 
-            return rnd.Next(10, 91);
+            return rnd.Next(10, 91) * Level;
         }
 
         public int Attack2()
         {
             Random rnd = new Random();
 
-            return rnd.Next(30, 71);
+            return rnd.Next(30, 71) * Level;
         }
 
         public int Attack3()
         {
             Random rnd = new Random();
 
-            return rnd.Next(40, 61);
+            return rnd.Next(40, 61) * Level;
         }
 
         public bool TakeDamage(int damage) 
@@ -53,15 +57,15 @@ namespace Pokemon_Fight
         public int Heal() 
         {
             Random rnd = new Random();
-            return rnd.Next(20, 71);
+            return rnd.Next(20, 71) * Level;
             
         }
         public void TakeHeal(int heal)
         {
             Health += heal;
-            if (Health >= 0)
+            if (Health >= MaxHealth)
             {
-                Health = 100;
+                Health = MaxHealth;
                 
             }
             

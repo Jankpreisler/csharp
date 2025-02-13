@@ -9,6 +9,6 @@
         Title="Game" Height="450" Width="800" Background="#FF7EDDEA" Foreground="#FFE6B9B9">
 
     <Grid Margin="0,0,0,-16" RenderTransformOrigin="0.864,0.832">
-        <Windows:UserControl_Map HorizontalAlignment="Left" VerticalAlignment="Top" Height="414" Width="756" Margin="-396,-84,0,0"/>
+        <Windows:UserControl_Map x:Name="UserControl_World" HorizontalAlignment="Left" VerticalAlignment="Top" Height="414" Width="756" Margin="-396,-84,0,0"/>
     </Grid>
 </Window>

@@ -20,21 +20,23 @@ namespace Pokemon_Fight.Windows
     /// </summary>
     public partial class Window_PokemonBattle : Window
     {
-        public GameEngine GameEngine { get; set; } = new GameEngine();
+        public GameEngine GameEngine { get; set; }
         public List<string> PokemonFight { get; set; } = new List<string>();
-        public Window_PokemonBattle()
+        public Window_PokemonBattle(GameEngine gameEngine)
         {
             InitializeComponent();
+            GameEngine = gameEngine;
             RefresElements();
+
 
         }
         private void RefresElements()
         {
             ProgressBar_Pokemon1_HP.Value = GameEngine.FirstPokemon.Health;
-            label_Pokemon_1HP.Content = $" {GameEngine.FirstPokemon.Health} / 100";
+            label_Pokemon_1HP.Content = $" {GameEngine.FirstPokemon.Health} / {GameEngine.FirstPokemon.MaxHealth}";
 
             ProgressBar_Pokemon_2HP.Value = GameEngine.LastPokemon.Health;
-            label_Pokemon_2HP.Content = $" {GameEngine.LastPokemon.Health} / 100";
+            label_Pokemon_2HP.Content = $" {GameEngine.LastPokemon.Health} / {GameEngine.LastPokemon.MaxHealth}";
 
             ListView_FightLogger.Items.Clear();
 
@@ -161,6 +163,11 @@ namespace Pokemon_Fight.Windows
 
             AIAtack();
             RefresElements();
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

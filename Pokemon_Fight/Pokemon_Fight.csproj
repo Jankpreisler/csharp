@@ -25,7 +25,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\deffeefw.png" />
-    <Resource Include="images\qwddwq.jpg" />
   </ItemGroup>
 
 </Project>
